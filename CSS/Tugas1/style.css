@@ -1,0 +1,43 @@
+.header {
+    text-align: center;
+}
+
+.header span {
+    color: red;
+}
+
+.card img {
+    margin: 4px;
+    width: 90%;
+    border-radius: 3px;
+    
+}
+.card {
+    height: 400px;
+    overflow: auto;
+    margin: 20px;
+}
+
+.card input {
+    padding: 8px;
+    width: 120px;
+    background-color: #739072;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.card1 {
+    width: 150px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.card2 {
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
