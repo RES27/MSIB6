@@ -11,24 +11,22 @@
  * 4. Tampilkan value total yang sekarang pada terminal
  */
 
-var nilai = 85;
-var c = 80;
-var total = "";
+var nilai = 70;
+
 
 if (nilai > 85 ) {
-    total = "Sangat Bagus";
+    console.log("Sangat Bagus");
 }
 else if(nilai > 70 && nilai < 80) {
-    total = "Bagus";
+    console.log("bagus");
 }else if(nilai > 60 && nilai < 70) {
-    total = "Cukup";
+    console.log("baik");
 }else if(nilai > 50 && nilai < 60) {
-    total = "Kurang";
+    console.log("kurang");
 }else {
-    total = "Sangat Kurang";
+    console.log("Sangat kurang");
 }
-total = c % nilai;
 
-console.log(total);
+console.log(nilai);
 
 
