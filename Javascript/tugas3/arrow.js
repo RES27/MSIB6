@@ -11,4 +11,4 @@ const average = () => {
   return result / arr.length;
 }
 
-console.log(average);
+console.log(average());
