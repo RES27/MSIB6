@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        margin: 20px;
+        }
+
+        form {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 20px;
+        }
+
+        h1 {
+        text-align: center;
+        }
+
+        h4 {
+        margin-bottom: 5px;
+        }
+
+        input, textarea {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 5px;
+        width: 100%;
+        }
+        textarea {
+        height: 100px;
+        }
+
+        #submit {
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        width: 100px;
+        }
+
+        #submit:hover {
+        background-color: #008000;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="submitForm()">
+        <h1>Form Data</h1>
+        <h4>First Name:</h4>
+        <input type="text" placeholder="Tuliskan nama depan Anda" id="first" name="first">
+        <h4>Last Name:</h4>
+        <input type="text" placeholder="Tuliskan nama belakang Anda" id="last" name="last">
+        <h4>Phone Number :</h4>
+        <input type="text" placeholder="Tuliskan nama belakang Anda" id="number" name="number">
+        <h4>Address</h4>
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Masukan alamat Anda"></textarea><br>
+        <button id="submit" >Submit</button>
+    </form>
+    
+    <script>
+        function submitForm() {
+            event.preventDefault();
+            const firstName = document.getElementById('first').value;
+            const lastName = document.getElementById('last').value;
+            const number = document.getElementById('number').value;
+            const address = document.getElementById('address').value;
+    
+            console.log(`First_Name: ${firstName}`);
+            console.log(`Last_Name: ${lastName}`);
+            console.log(`Phone_Number: ${number}`);
+            console.log(`Address: ${address}`);
+        }
+    </script>
+
+</body>
+</html>

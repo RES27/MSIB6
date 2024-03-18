@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menambahkan list item DOM</title>
+    <style>
+        body {
+        font-family: sans-serif;
+        margin: 20px;
+        }
+
+        #list-container {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 500px;
+        padding: 20px;
+        }
+
+        h1 {
+        text-align: center;
+        }
+
+        #list {
+        padding: 0;
+        }
+
+        #list li {
+        margin-bottom: 10px;
+        padding: 10px;
+        }
+
+        #add-item {
+        background-color: blue;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        display: block;
+        font-size: 18px;
+        margin: 10px auto;
+        padding: 10px 20px;
+        
+        }
+
+        #add-item:hover {
+        background-color: #000080;
+        }
+    </style>
+</head>
+<body>
+    <div id="list-container">
+        <h1>List Item</h1>
+        <ol id="list">
+            <li>Frist Item</li>
+            <li>Second Item</li>
+            
+        </ol>
+        <button id="add-item">Tambahkan Item</button>
+    </div>
+
+    <script>
+        const listContainer = document.getElementById('list-container');
+        const list = document.getElementById('list');
+        const addItemButton = document.getElementById('add-item');
+
+        addItemButton.addEventListener('click', () => {
+
+        const listItem = document.createElement('li');
+        listItem.textContent = "Extra Item";
+
+        list.appendChild(listItem);
+});
+    </script>
+</body>
+</html>
