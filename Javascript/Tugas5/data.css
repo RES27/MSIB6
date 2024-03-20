@@ -1,0 +1,222 @@
+body {
+  margin: 0px;
+}
+
+header {
+  background-color: #0d9276;
+  padding: 10px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+header nav {
+  display: flex;
+  gap: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+header img {
+  width: 150px;
+}
+
+@media (min-width: 950px){
+  .section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    padding: 0px 20px;
+  }
+}
+@media (max-width: 950px) {
+
+  header img {
+    width: 20%;
+  }
+  .button-navbar {
+    display: none;
+  }
+
+  .section-1 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+}
+@media (max-width: 700px) {
+ 
+  .button-navbar {
+    display: none;
+  }
+
+  .section-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+  .section-2 {
+    width: 90%;
+  }
+  
+}
+@media (max-width: 500px) {
+  
+  .button-navbar {
+    display: none;
+  }
+
+  .section-1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+  .section-2 {
+    width: 75%;
+  }
+  
+}
+
+.button-register {
+  background-color: white;
+  font-size: 20px;
+  color: #0d9276;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid #0d9276;
+}
+
+.button-login {
+  background-color: #0d9276;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin-left: 10px;
+}
+.button-login a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login-user{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: 200px;
+  padding-right:50px ;
+}
+
+main {
+  padding: 0px 30px;
+}
+
+/* .catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 0px 20px;
+} */
+
+.produk {
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  border: 2px solid rgba(13, 146, 118, 0.4);
+  box-shadow: 2px 2px 3px rgba(71, 77, 75, 0.3);
+}
+
+.produk img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.keterangan {
+  margin: 0px 10px 10px 10px;
+}
+.keterangan button[type="submit"] {
+  width: 100%;
+  padding: 10px 5px 10px 5px;
+  background-color: #0d9276;
+  border: unset;
+  border-radius: 5px;
+  color: white;
+}
+.harga {
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+/* .section-1 {
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+} */
+
+.section-2 {
+  top: 15%;
+  position: sticky;
+  width: 80%;
+  border: 2px solid #0d9276;
+  padding: 20px;
+  align-self: self-start;
+  
+}
+
+.section-2 h3 {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.section-2 h4 {
+  margin: 10px 0px;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-2 button {
+  width: 100%;
+  background-color: #0d9276;
+  border: unset;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 0px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 25px;
+}
